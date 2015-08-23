@@ -112,12 +112,120 @@ a:active
     background: linear-gradient(#8AB8E6, #EBF5FF); /* Standard syntax */
 }
 
+.tnav {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 800px;
+    /*height: 2em;*/
+    height: 2.6em;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
 h1 img
 {
     height: 1em;
     vertical-align: bottom;
     width: auto;
 }
+
+.tnav a:link,
+.tnav a:visited,
+.tnav a:hover,
+.tnav a:active
+{
+    display:block;
+    width: 100%;
+    /*font-size: 1.5em;*/
+    /*font-size: 1.4em;*/
+    font-size: 2em;
+    color: #1E0059;
+    text-decoration: none;
+    border-radius: 0.4em;
+    /*height: 1.6em;*/
+}
+
+@media (max-width: 600px) {
+    .tnav a:link,
+    .tnav a:visited,
+    .tnav a:hover,
+    .tnav a:active
+    {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 400px) {
+    .tnav a:link,
+    .tnav a:visited,
+    .tnav a:hover,
+    .tnav a:active
+    {
+        font-size: 1.3em;
+    }
+}
+
+.tnav a:hover
+{
+    background-color: #FFECA9;
+}
+
+.tnav ul {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*height: 2em;*/
+    height: 2.6em;
+}
+
+.tnav li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    float: left;
+    width: 33.333333%;
+    /*height: 2em;*/
+    height: 2.6em;
+    /*line-height: 2em;*/
+    line-height: 2.6em;
+}
+
+.tnav a.current:link,
+.tnav a.current:visited,
+.tnav a.current:hover,
+.tnav a.current:active
+{
+    color: #5500FF;
+    /*font-size: 1.6em;*/
+    font-size: 2.3em;
+}
+
+@media (max-width: 600px) {
+    .tnav a.current:link,
+    .tnav a.current:visited,
+    .tnav a.current:hover,
+    .tnav a.current:active
+    {
+        font-size: 1.7em;
+    }
+}
+
+@media (max-width: 400px) {
+    .tnav a.current:link,
+    .tnav a.current:visited,
+    .tnav a.current:hover,
+    .tnav a.current:active
+    {
+        font-size: 1.5em;
+    }
+}
+
+
 
 .w3 li {
     width: 33.333333%;
