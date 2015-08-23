@@ -171,7 +171,8 @@ h1 img
 
 .tnav a:hover
 {
-    background-color: #FFECA9;
+    /*background-color: #FFECA9;*/
+    background-color: #DDDDDD;
 }
 
 .tnav ul {
