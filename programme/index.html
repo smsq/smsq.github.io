@@ -24,6 +24,26 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
+<script> 
+function toggle(obj) { 
+var obj=document.getElementById(obj); 
+if (obj.style.display == "block") obj.style.display = "none"; 
+else obj.style.display = "block"; 
+} 
+</script> 
+
+<style>
+abstract { 
+    max-width: 600px;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0em;
+    margin-right: auto;
+    color: black;
+    font-style: normal;
+}
+</style>
 </head>
 
 <body>
@@ -57,10 +77,18 @@ Programme
                 </td>
                 <td>The University of Queensland</td>
                 <td>
-                    Nonequilibrium flow in nanopores (keynote)
+                    <!--<a href="javascript: void(0);" onClick="toggle('abstract1')">-->
+                        Nonequilibrium
+                        flow in nanopores (keynote)
+                    <!--</a>-->
                     </td>
                 </tr>
-                <tr>
+                <tr><td></td><td></td><td>
+                        <abstract id="abstract1" style="display:none;">
+Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract.  Test abstract. 
+                        </abstract>
+                </td></tr>
+                        <tr>
                     <td>
                             Denis Evans
                     </td>
