@@ -43,6 +43,13 @@ table.participants {
     width: 100%;
     border-collapse: collapse;
 }
+table.participants th,
+table.participants td {
+    /* Long surnames and title words must be allowed to break mid-word.
+       Without this the table cannot shrink below the width of its longest
+       word in each column, which runs off the side of a phone screen. */
+    overflow-wrap: anywhere;
+}
 table.participants th {
     text-align: left;
     color: #000052;
@@ -65,6 +72,18 @@ abstract {
 }
 abstract p {
     margin: 0.5em 0em;
+}
+
+@media (max-width: 600px) {
+    /* Claw back horizontal space on phones. */
+    table.participants th,
+    table.participants td {
+        padding-left: 0.1em;
+        padding-right: 0.1em;
+    }
+    abstract {
+        margin-left: 0.4em;
+    }
 }
 </style>
 
