@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Statistical Mechanics of Soft Matter</title>
-    <link rel="canonical" href="/" />
-    <meta name="description" content="Homepage Statistical Mechanics of Soft Matter conference."> 
+    <title>Program &ndash; Statistical Mechanics of Soft Matter</title>
+    <link rel="canonical" href="/program/" />
+    <meta name="description" content="Program and registered participants for the Twelfth Statistical Mechanics of Soft Matter Meeting.">
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/css/smsq.css">
-    <meta name="viewport" content="word-wrap:break-word;max-width=device-word-wrap:break-word;max-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -28,51 +28,48 @@
 <!-- Didn't work, at least not easily, so gave up. Will leave here as it -->
 <!-- might help for including abstracts in future. -->
 <!-- <script src="https://www.w3schools.com/lib/w3.js"></script> -->
-<script> 
-function toggle(obj) { 
-var obj=document.getElementById(obj); 
-if (obj.style.display == "block") obj.style.display = "none"; 
-else obj.style.display = "block"; 
-} 
-</script> 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-          tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-      });
-  </script>
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script>
+function toggle(id) {
+    var el = document.getElementById(id);
+    el.style.display = (el.style.display === "block") ? "none" : "block";
+}
+</script>
+<script>
+    window.MathJax = {
+        tex: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-abstract { 
-    max-word-wrap:break-word;max-width: 600px;
-    white-space:normal;
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: 0em;
-    margin-right: auto;
-    color: black;
-    font-style: normal;
+/* Participants table, and the abstracts that expand underneath each title. */
+table.participants {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.participants th {
+    text-align: left;
+    color: #000052;
+    border-bottom: 2px solid #8AB8E6;
+}
+table.participants td {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+table.participants tr.abstractrow td {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-table {
-    word-wrap:break-word;max-width:auto;
+abstract {
+    display: none;          /* toggle() switches this to block */
+    max-width: 50em;
+    margin: 0.2em 0em 0.9em 1.5em;
+    cursor: pointer;
 }
-td {
-    padding: 0px;   
-    <!--white-space:nowrap;-->
-    white-space:normal;
+abstract p {
+    margin: 0.5em 0em;
 }
-<!--table tr td:nth-child(1) { min-width: 12em; }-->
-table tr td:nth-child(1) { min-width: 9em; max-width: 9em; }
-table tr td:nth-child(2) { min-width: 12em; }
-<!--td:last-child {-->
-    <!--word-wrap:break-word;max-width:600px;-->
-<!--}-->
-
-<!--table td:last-child {-->
-    <!--word-wrap:break-word;max-width: 100%;-->
-<!--}-->
 </style>
 
 <style>
@@ -124,6 +121,194 @@ table tr td:nth-child(2) { min-width: 12em; }
                 <p>
                 The schedule will be added below in November.
                 </p>
+
+                <!-- participants:start -->
+                <h2 id="participants">Registered participants as of 21 September, 2026.</h2>
+                <p>
+                Click on a talk title to show or hide its abstract.
+                </p>
+
+                <table class="participants">
+                <thead>
+                <tr><th>Name</th><th>Affiliation</th><th>Talk title</th></tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Debra Bernhardt</td>
+                    <td>University of Queensland</td>
+                    <td>&mdash;</td>
+                </tr>
+                <tr>
+                    <td>Amit Bharti</td>
+                    <td>Panjab University, Chandigarh, India</td>
+                    <td><a href="javascript: void(0);" onclick="toggle('abstract0')">Multifunctional N‑Doped Carbon Dots Derived from Glucono-d-lactone and Histidine for Fe3+/Ce4+ Ion Detection, Tryptophan Sensing, Antioxidant Activity, and Bioimaging</a></td>
+                </tr>
+                <tr class="abstractrow">
+                    <td colspan="3">
+                        <abstract id="abstract0" onclick="toggle('abstract0')">
+                        <p>Development of sustainable and multifunctional nanomaterials is essential for advancing environmentally benign technologies in sensing and biomedical applications. Herein, hydrothermal-based one-pot synthesis of carbon dots (GH-CDs) using glucono-d-lactone (GDL) and L-histidine is reported. The GH-CDs exhibit cyan-blue fluorescence and excellent aqueous dispersibility with abundant surface functionalities, as confirmed using UV-vis, fluorescence spectroscopy, HR-TEM, SAED, pXRD, XPS, FT-IR, TGA, and zeta potential measurements. These natural-source-derived CDs exhibited selective detection of Fe3+ and Ce4+ ions mainly due to static interaction and surface complexation, which was confirmed using fluorescence quenching mechanistic analysis. Specifically, GH-CDs demonstrated excellent LOD values of 0.0514 and 0.034 μM for Fe3+ and Ce4+ ions, respectively. The real-time validation of this selective metal ion detection was performed in real water samples, which confirmed the operational robustness and interference resistance of GH-CDs. Additionally, the GH-CDs demonstrated exceptionally high specificity for tryptophan compared to all other natural amino acids. Further, the multifunctional nanoprobe analysis of GH-CDs was extended for evaluating their antioxidant activity using a DPPH assay. This analysis revealed a concentration-dependent radical scavenging efficiency of GH-CDs with 73.2% inhibition at 500 μg/mL and an IC50 value of 86.6 μg/mL. The cytotoxicity analysis followed by cellular imaging studies using the normal HEK cell line further demonstrated the high biocompatibility and fluorescence imaging potential of GH-CDs. The reported versatile applications of GH-CDs make them a sustainable, cost-effective, and efficient nanoprobe material for future use.</p>
+                        </abstract>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nathan Clisby</td>
+                    <td>Swinburne University of Technology</td>
+                    <td>TBA</td>
+                </tr>
+                <tr>
+                    <td>Peter Daivis</td>
+                    <td>RMIT University</td>
+                    <td>&mdash;</td>
+                </tr>
+                <tr>
+                    <td>Mung Suan Pau Duhlian</td>
+                    <td>RMIT University</td>
+                    <td><a href="javascript: void(0);" onclick="toggle('abstract1')">Phase Field Simulation of Stick-Slip Flow Incorporating Shear Melting and Wall Slip</a></td>
+                </tr>
+                <tr class="abstractrow">
+                    <td colspan="3">
+                        <abstract id="abstract1" onclick="toggle('abstract1')">
+                        <p>The origin of stick-slip flow has been attributed to various possible processes such as interlayer slip, interfacial slip, and strain-induced melting based on experiments and molecular dynamics simulation. The phase field model adopted in this study was originally developed to simulate melting induced stick-slip. We extend this model by including interfacial slip as a possible mechanism for stick-slip flow. Both simple Navier wall slip and a yield stress wall slip mechanism are incorporated into the phase field model. With the implementation of interfacial slip, we determined parameters responsible for wall slip induced stick-slip and a state diagram that illustrates three different types of stick-slip behaviors. We find that both wall slip and shear induced melting are viable mechanisms for stick-slip flow, but the parameter range where wall slip induced stick-slip flow is very narrow. At a fixed value of the Navier slip length above a certain threshold, as the critical yield stress for wall slip is increased from zero, we see a transition from simple slip flow to wall yield stress induced stick-slip flow, to melting-induced stick-slip flow.</p>
+                        </abstract>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Yao Fu</td>
+                    <td>University of Queensland</td>
+                    <td>&mdash;</td>
+                </tr>
+                <tr>
+                    <td>Peter Harrowell</td>
+                    <td>University of Sydney</td>
+                    <td><a href="javascript: void(0);" onclick="toggle('abstract2')">Uncompenstated Entropy Loss at the Crystal-Melt Interface</a></td>
+                </tr>
+                <tr class="abstractrow">
+                    <td colspan="3">
+                        <abstract id="abstract2" onclick="toggle('abstract2')">
+                        <p>The crystal-melt interfacial free energy is a key quantity in theories of crystal morphology and nucleation. The fact that this free energy can be substantial in the absence of significant density difference is puzzling. Here we demonstrate that the interfacial free energy is a consequence of the uncompensated loss of entropy in the intergaial region.</p>
+                        </abstract>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Andreas Menzel</td>
+                    <td>Otto von Guericke University Magdeburg</td>
+                    <td><a href="javascript: void(0);" onclick="toggle('abstract3')">The effect of viscoelasticity on the dynamics of thin active films</a></td>
+                </tr>
+                <tr class="abstractrow">
+                    <td colspan="3">
+                        <abstract id="abstract3" onclick="toggle('abstract3')">
+                        <p>Studying the dynamics of active suspensions has become a widespread topic in the fields of soft matter and biophysics. Typically, they consist of self-propelling agents, such as certain types of bacteria, in a carrier liquid, mostly water-based. Investigations of the analogue for systems involving elasticity has only rather recently caught substantially increasing interest. The topic is important, as many biological substances show pronounced viscoelastic behaviour.</p>
+                        <p>We consider thin, active, viscoelastic or elastic films on a substrate. Our considerations are general, but the most immediate motivation in our mind are biofilms. For this purpose, we developed a theoretical continuum description that can be continuously tuned from viscous, via viscoelastic, to elastic systems by adjusting just one parameter.</p>
+                        <p>As a result, we find that elasticity supports local circling of the active units, instead of directed collective migration. In a transitional regime between these two dynamic states, traveling stripe-like patterns emerge. Moreover, the circling motion becomes imperfect in larger systems, which leads to desynchronisation.</p>
+                        <p>Finally, our study provides a basis to describe previous experimental observations on oscillatory motion in biofilms. We are currently working on an extension to discretised, particle-based descriptions.</p>
+                        </abstract>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rangika Munaweera</td>
+                    <td>University of Queensland</td>
+                    <td><a href="javascript: void(0);" onclick="toggle('abstract4')">Accelerating Polymer Informatics with High-Throughput MD: Thermoresponsive Behavior of PNIPAM as a Model System</a></td>
+                </tr>
+                <tr class="abstractrow">
+                    <td colspan="3">
+                        <abstract id="abstract4" onclick="toggle('abstract4')">
+                        <p>Polymer informatics is a rapidly advancing field, yet its progress is constrained by the scarcity and inconsistency of experimental datasets. Polymer properties are strongly influenced by synthesis routes, processing history, and measurement techniques, which makes existing data often unsuitable for direct use in machine learning (ML) models. High-throughput molecular dynamics (MD) simulations are a promising strategy to overcome this limitation by generating large-scale, consistent datasets under standardized conditions. These datasets not only minimize noise arising from synthesis or measurement variations but also provide atomistic level resolution, enabling systematic exploration of structure-property relationships. However, a critical challenge with MD simulations is generating accurate parameters of polymers to ensure that the simulations yield physically realistic data, as well as in the generation of sufficiently diverse datasets to enable robust ML training. In this study, we present a workflow for integrating MD simulations with polymer informatics, using poly(N-isopropylacrylamide) (PNIPAM) as a model system. We demonstrate how accurate parameter sets were employed to reproduce the thermoresponsive behavior of PNIPAM and how large, standardized datasets were generated to address the requirements of ML applications. Finally, we discuss how we extracted key descriptors from MD trajectories that capture relevant structural features of the polymer linking those to their macroscopic behaviour. This work highlights how MD driven datasets can address the limitations associated with experimental data and accelerate the development of predictive polymer informatics tools.</p>
+                        </abstract>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Abigail Murcott</td>
+                    <td>University of Auckland</td>
+                    <td><a href="javascript: void(0);" onclick="toggle('abstract5')">Design Rules and Mapping Transition Pathways in Self-Assembled Structures for Amphiphilic Janus Colloids</a></td>
+                </tr>
+                <tr class="abstractrow">
+                    <td colspan="3">
+                        <abstract id="abstract5" onclick="toggle('abstract5')">
+                        <p>Janus colloids exhibit complex dynamical behaviour that we can steer between different self-assembled structures by adjusting features such as interaction strength, temperature, or patch geometry, making them attractive for applications across a range of fields and in the design of novel materials. We conduct molecular dynamics simulations on a system of three triblock Janus particles in a fluid to analyse the tunability of their dynamics when adjusting geometric (patch size) and chemical (hydrophobic interaction strength) parameters. We create low-dimensional representations by combining atomistic descriptors with dimension reduction techniques to observe and classify the different assemblies this system can access, and estimate the time each simulation spends visiting a given state. Using metadynamics to construct free energy surfaces, we can map out pathways the system explores between local and global minima as we tune the physical and chemical characteristics. We find we can use the tuneability of these features to bias the favourability of transition pathways between competing  minima on the free energy surface. Finally, we are developing a machine learning model that, once trained, will allow the fluid degrees of freedom to be integrated out of the simulation entirely, replaced by a coarse-grained potential paired with suitable dynamics. The first two methods above can then be applied to the trajectories using the new coarse-grained potential to compare the dynamics of the system to the original molecular dynamics simulations that include the fluid explicitly.</p>
+                        </abstract>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Huong Nguyen</td>
+                    <td>UNSW</td>
+                    <td><a href="javascript: void(0);" onclick="toggle('abstract6')">Fatty Alcohol Bilayers Mimic Phospholipid Membranes for Rapid Prediction of Membrane Permeability of Small Drug-like Molecules</a></td>
+                </tr>
+                <tr class="abstractrow">
+                    <td colspan="3">
+                        <abstract id="abstract6" onclick="toggle('abstract6')">
+                        <p>Passive membrane permeation is an important consideration in drug development. However, permeability coefficients obtained from atomistic molecular dynamics (MD) simulations are much too costly for routine use in the drug discovery pipeline. In this work, we demonstrate that fatty alcohols such as dodecanol can mimic phospholipid (POPC) bilayers to accelerate computational prediction of passive membrane permeability (by about 30-fold) using atomic-resolution MD simulations. Comparison of the two membrane models indicates that key features of their transmembrane free energy profiles are very similar (typically within 1 kcal mol-1) for a wide range of hydrophilic, hydrophobic, amphiphilic and charged solutes with molecular weights up to 400 Da. The strong correlation between permeability coefficients (logPm) and the transmembrane permeation barrier was exploited to develop a regression model that further reduced computational cost by about 300-fold. This regression model uses the dodecanol transmembrane barrier as input and is demonstrated to efficiently recover phospholipid MD-predicted logPm values with an average prediction error of approximately 0.4 log units across 41 diverse solutes. Our findings suggest complementary strategies to accelerate computational prediction of phospholipid membrane permeability using atomic-resolution MD simulations.</p>
+                        </abstract>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kannan Ridings</td>
+                    <td>University of Auckland</td>
+                    <td>&mdash;</td>
+                </tr>
+                <tr>
+                    <td>Stephen Sanderson</td>
+                    <td>University of Queensland</td>
+                    <td><a href="javascript: void(0);" onclick="toggle('abstract7')">Response theory in nonequilibrium systems</a></td>
+                </tr>
+                <tr class="abstractrow">
+                    <td colspan="3">
+                        <abstract id="abstract7" onclick="toggle('abstract7')">
+                        <p>Methods based in response theory, such as the Green-Kubo relations and the transient time correlation function (TTCF) formalism, have proven their utility in molecular dynamics simulation. However, some difficulties remain in treating time-dependent dynamics and perturbations to nonequilibrium states. This talk discusses these difficulties and current progress towards resolving them.</p>
+                        </abstract>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mathushan Sathiyamoorthy</td>
+                    <td>University of Melbourne</td>
+                    <td><a href="javascript: void(0);" onclick="toggle('abstract8')">Vitrification of Au–Cu Nanoparticles: Mapping the Compositional Scale for Optimal Glass-Forming Ability</a></td>
+                </tr>
+                <tr class="abstractrow">
+                    <td colspan="3">
+                        <abstract id="abstract8" onclick="toggle('abstract8')">
+                        <p>Metallic glass nanoparticles are emerging as highly promising materials for diverse applications in biomedical sensing and catalysis. While bulk metallic glasses typically rely on multicomponent complexity to achieve vitrification, the structural criteria governing glass-forming ability (GFA) at the nanoscale remain poorly understood. To address this, we investigate the vitrification of Au-based alloy nanoparticles through molecular dynamics simulations. Au-Cu systems were simulated across the entire compositional spectrum (0-100%). Our results reveal that alloys containing 30-80% Cu exhibit strong glass formation, whereas compositions approaching pure Au or Cu (85-95%) demonstrate high crystalline nature. We quantify GFA from the post-quench crystalline fraction and the abundance of perfect and distorted icosahedral motifs. The compositions with highest GFA maintain a negligible crystalline fraction across various quench-rates and elevated icosahedral content. This demonstrates that the binary Au–Cu system is a strong candidate for nanoglass applications and provides quantitative design rules for noble-metal glassy nanoparticles.</p>
+                        </abstract>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Paul Schoeman</td>
+                    <td>University of Auckland</td>
+                    <td>&mdash;</td>
+                </tr>
+                <tr>
+                    <td>Sughra Shaikh</td>
+                    <td>University of Queensland</td>
+                    <td><a href="javascript: void(0);" onclick="toggle('abstract9')">Patchy Brownian Cluster Dynamics of Hexameric Globulin Plant Proteins</a></td>
+                </tr>
+                <tr class="abstractrow">
+                    <td colspan="3">
+                        <abstract id="abstract9" onclick="toggle('abstract9')">
+                        <p>This study evaluates whether Patchy Brownian Cluster Dynamics [1] can be used to model the hexameric globulin plant proteins and their aggregation. Hexameric structure consists of six subunits, where subunits first assemble into trimers that subsequently combine to form the globulin protein [2]. Each protein subunit is modelled as a spherical colloidal particle with three patches, representing disulphide bonds and hydrophobic interactions. Initially, two patch simulations are performed to optimise parameters for disulphide bonds, followed by three-patch simulations to optimise the overall model. For two-patch simulations, at patch angle 20°, varying the inter-patch angle from 150° to 90° results in a transition from chain-like to trimeric structures. However, for three patch simulations, we observed few hexamers, suggesting the need to further tune the interaction range and strength. The current observation of hexamers along with smaller aggregates indicates that a patchy colloidal approach can be used to describe multi-subunit plant proteins.  Future work will optimise the model and seek to use it to predict the structures arising during the gelation of plant proteins under different experimental conditions.</p>
+                        <p>[1] Prabhu, et al., J. Chem. Phys. 141, 024904 (2014).</p>
+                        <p>[2] Sharan et al., Compr. Rev. Food Sci. Food Saf. 20, 401-428 (2021).</p>
+                        </abstract>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Billy Todd</td>
+                    <td>Swinburne University of Technology</td>
+                    <td><a href="javascript: void(0);" onclick="toggle('abstract10')">Practical tribology and nonlinear response theory: bridging the gap between NEMD simulation and experiment</a></td>
+                </tr>
+                <tr class="abstractrow">
+                    <td colspan="3">
+                        <abstract id="abstract10" onclick="toggle('abstract10')">
+                        <p>Molecular simulations of tribology commonly employ nonequilibrium molecular dynamics (NEMD), in which a structured lubricant is confined between moving walls and its tribological and rheological properties are measured. However, conventional NEMD cannot access the realistic strain rates encountered experimentally. We have recently demonstrated that nonlinear response theory, implemented through the transient-time correlation function (TTCF) technique, can bridge this gap, although these studies were largely limited to simple Lennard-Jones fluids as proof-of-concept systems.</p>
+                        <p>Here, we demonstrate the application of TTCF to NEMD simulations at experimentally accessible strain rates and examine two tribological systems: squalane confined between sheared iron oxide walls modified with organic surfactants, and water confined within sheared graphene nanochannels. At realistic strain rates, with the lowest of order 10⁵ s⁻¹, standard NEMD produces signals too noisy to accurately measure any property of interest. In contrast, TTCF yields exceptionally clean signals and high statistical accuracy for all measurable quantities. We determine slip velocity, slip length, shear stress and friction coefficient for both systems. This is the first demonstration of NEMD measurements of these properties at experimentally accessible strain rates for these systems. For water confined by graphene, we also compare our results with existing simulation and experimental measurements.</p>
+                        </abstract>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alfred Uhlherr</td>
+                    <td>Swinburne University of Technology</td>
+                    <td>Looking backward to move forward: Monte Carlo simulation methods that can utilise energy minimisation</td>
+                </tr>
+                </tbody>
+                </table>
+                <!-- participants:end -->
                 <!-- <p> -->
                 <!-- The schedule may be seen below or downloaded as a pdf file <a -->
                 <!--     href="SMSQ_program_2025.pdf">here</a>. -->
