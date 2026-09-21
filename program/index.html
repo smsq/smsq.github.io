@@ -75,14 +75,37 @@ abstract p {
 }
 
 @media (max-width: 600px) {
-    /* Claw back horizontal space on phones. */
-    table.participants th,
+    /* Too narrow for three columns, so stop being a table: each participant
+       becomes a stacked block of name, affiliation and talk title, with a
+       gap between entries instead of column alignment. */
+    table.participants,
+    table.participants tbody,
+    table.participants tr,
     table.participants td {
-        padding-left: 0.1em;
-        padding-right: 0.1em;
+        display: block;
+        width: auto;
+    }
+    table.participants thead {
+        display: none;      /* column headings make no sense stacked */
+    }
+    table.participants td {
+        padding: 0em;
+    }
+    table.participants td.notitle {
+        display: none;      /* no talk given: leave the line out entirely */
+    }
+    table.participants tr {
+        padding-top: 1.3em;
+    }
+    table.participants tbody tr:first-child,
+    table.participants tr.abstractrow {
+        padding-top: 0em;
+    }
+    table.participants tr:not(.abstractrow) > td:first-child {
+        font-weight: bold;  /* the name opens each entry */
     }
     abstract {
-        margin-left: 0.4em;
+        margin-left: 0em;
     }
 }
 </style>
@@ -140,7 +163,7 @@ abstract p {
                 <tr>
                     <td>Debra Bernhardt</td>
                     <td>University of Queensland</td>
-                    <td>&mdash;</td>
+                    <td class="notitle">&mdash;</td>
                 </tr>
                 <tr>
                     <td>Amit Bharti</td>
@@ -162,7 +185,7 @@ abstract p {
                 <tr>
                     <td>Peter Daivis</td>
                     <td>RMIT University</td>
-                    <td>&mdash;</td>
+                    <td class="notitle">&mdash;</td>
                 </tr>
                 <tr>
                     <td>Mung Suan Pau Duhlian</td>
@@ -179,7 +202,7 @@ abstract p {
                 <tr>
                     <td>Yao Fu</td>
                     <td>University of Queensland</td>
-                    <td>&mdash;</td>
+                    <td class="notitle">&mdash;</td>
                 </tr>
                 <tr>
                     <td>Peter Harrowell</td>
@@ -247,7 +270,7 @@ abstract p {
                 <tr>
                     <td>Kannan Ridings</td>
                     <td>University of Auckland</td>
-                    <td>&mdash;</td>
+                    <td class="notitle">&mdash;</td>
                 </tr>
                 <tr>
                     <td>Stephen Sanderson</td>
@@ -276,7 +299,7 @@ abstract p {
                 <tr>
                     <td>Paul Schoeman</td>
                     <td>University of Auckland</td>
-                    <td>&mdash;</td>
+                    <td class="notitle">&mdash;</td>
                 </tr>
                 <tr>
                     <td>Sughra Shaikh</td>
